@@ -24,6 +24,7 @@ main nav {
     border-bottom: 1px solid #dbdbdb;
     border-top: 1px solid #dbdbdb;
     align-items: center;
+    position: fixed;
 }
 
 .logo {
@@ -48,8 +49,9 @@ main nav {
 
 .icons-nav {
     font-size: 24px;
-    grid-column: 7;
+    grid-column: 8;
     display: flex;
+    padding-right: 90;
 }
 
 .icon-item{
@@ -58,7 +60,16 @@ main nav {
 
 .search{
     grid-column: 5;
+    margin-left: 80px;
 }
+
+.search i {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 65px;
+    color: #DBDBDB;
+    font-size: 12px;
+  }
 
 #search {
     width: 215px;
@@ -71,7 +82,6 @@ main nav {
     background: #fafafa;
 }
 
-
 .content {
     grid-column: 1 / end;
 }
@@ -79,7 +89,7 @@ main nav {
 .main-content {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    padding: 60px;
+    padding-top: 140px;
 }
 
 .card-main {
@@ -87,6 +97,7 @@ main nav {
     background: #FFF;
     border: 1px solid #DBDBDB;
     border-radius: 5px;
+    margin-bottom: 65px;
 }
 
 .card-header {
@@ -191,14 +202,202 @@ main nav {
     color: rgb(150, 150, 150);
 }
 
+.add-comment {
+    display: flex;
+    border-top: 1px solid #DBDBDB; 
+    align-items: center;
+}
+
+.add-comment span {
+    color: #3897f0;
+    margin-right: 20px;
+    font-size: 12px;
+    opacity: 30%;
+    font-weight: bold;
+}
+
 .add-comment #input-comment{
     border: none;
     width: 100%;
     height: 55px;
     padding-left: 20px;
-    border-top: 1px solid #DBDBDB; 
 }
 
 .add-comment #input-comment:focus{
     outline: none;
+}
+
+.right-side {
+    margin-left: 30px;
+    grid-column: 5 / 8;
+    width: 285px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile .img-profile img {
+    border-radius: 100%;
+}
+
+.profile .text-profile {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+}
+
+.profile .text-profile .user-profile {
+    font-weight: bold;
+    font-size: 12px;
+    color: #252525;
+}
+
+.profile .text-profile .name-profile {
+    font-size: 12px;
+    color: #666
+}
+
+.stories {
+    background: #ffffff;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    padding: 15px 0 0 15px;
+    margin-top: 15px;
+}
+
+.stories .stories-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.stories .stories-header span:first-child{
+    color: rgb(136, 136, 136);
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.stories .stories-header span:last-child{
+    color: #252525;
+    font-size: 11px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.stories .stories-content {
+    overflow-y: scroll;
+    height: 181px;
+}
+
+.stories .first-item{
+    margin-top: 10px;
+}
+
+.stories .item-stories {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+
+.stories .item-stories .text-stories {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+    font-size: 12px;
+    margin-left: 6px;
+}
+
+.stories .item-stories .img-stories img {
+    border-radius: 100%;
+    border: 3px solid  rgb(204, 34, 77);
+    padding: 1.5px;
+}
+
+.stories .item-stories .date-stories {
+    color: #666;
+    font-size: 11px;
+}
+
+.stories .item-stories .user-stories {
+    font-weight: bold;
+}
+
+.suggestion {
+    background: #ffffff;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    padding: 15px 0 0 15px;
+    margin-top: 10px;
+}
+
+.suggestion .suggestion-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.suggestion .suggestion-header span:first-child{
+    color: rgb(136, 136, 136);
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.suggestion .suggestion-header span:last-child{
+    color: #252525;
+    font-size: 11px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.suggestion .suggestion-content {
+    height: 150px;
+}
+
+.suggestion .first-item{
+    margin-top: 10px;
+}
+
+.suggestion .item-suggestion {
+    display: flex;
+    margin-bottom: 13px;
+    align-items: center;
+}
+
+
+.suggestion .item-suggestion .text-suggestion {
+    display: flex;
+    font-size: 12px;
+    margin-left: 6px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.suggestion .item-suggestion .text-suggestion .left-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.suggestion .item-suggestion .img-suggestion img {
+    border-radius: 100%;
+}
+
+.suggestion .item-suggestion .date-suggestion {
+    color: #666;
+    font-size: 11px;
+}
+
+.suggestion .item-suggestion .user-suggestion {
+    font-weight: bold;
+}
+
+.follow span {
+    color: #3897f0;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 15px;
 }
