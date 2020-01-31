@@ -90,6 +90,7 @@ main nav {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     padding-top: 140px;
+    padding-bottom: 65px;
 }
 
 .card-main {
